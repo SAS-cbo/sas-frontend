@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Slider from "react-slick";
+import RegisterUser from "../components/RegisterUser";
 
 const Dashboard = () => {
   const [projects, setProjects] = useState([]);
@@ -41,7 +42,7 @@ const Dashboard = () => {
   return (
     <div style={{ padding: "20px" }}>
       <h2>Dashboard Overview</h2>
-
+      <RegisterUser />
       <div style={{ display: "flex", gap: "20px", marginBottom: "30px" }}>
         <div style={cardStyle}><h3>Total Projects</h3><p>{projects.length}</p></div>
         <div style={cardStyle}><h3>Total Donations</h3><p>${totalDonations}</p></div>
