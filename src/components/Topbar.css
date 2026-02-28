@@ -1,0 +1,46 @@
+/* Topbar.css */
+.topbar {
+  height: 60px;
+  width: calc(100% - 250px); /* Sidebar width */
+  margin-left: 250px;
+  background-color: #1b263b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.topbar h1 {
+  font-size: 1.2rem;
+}
+
+.topbar .user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar .user-info span {
+  font-weight: 500;
+}
+
+.topbar .user-info button {
+  background-color: #00b4d8;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #0d1b2a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.topbar .user-info button:hover {
+  background-color: #0077b6;
+  transform: scale(1.05);
+}
