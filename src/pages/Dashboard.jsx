@@ -11,12 +11,12 @@ const Dashboard = () => {
   const token = localStorage.getItem("token");
   const config = { headers: { Authorization: `Bearer ${token}` } };
 
-  const sliderSettings = { 
-    dots: true, 
-    infinite: true, 
-    speed: 500, 
-    slidesToShow: 1, 
-    slidesToScroll: 1 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
   };
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Dashboard = () => {
   }, []);
 
   const totalDonations = donations.reduce(
-    (sum, d) => sum + Number(d.amount || 0), 
+    (sum, d) => sum + Number(d.amount || 0),
     0
   );
 
@@ -55,12 +55,12 @@ const Dashboard = () => {
 
   const balance = totalIncome - totalExpense;
 
-  const cardStyle = { 
-    background: "#fff", 
-    padding: "20px", 
-    borderRadius: "10px", 
-    boxShadow: "0 2px 10px rgba(0,0,0,0.1)", 
-    flex: 1 
+  const cardStyle = {
+    background: "#fff",
+    padding: "20px",
+    borderRadius: "10px",
+    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+    flex: 1
   };
 
   return (
@@ -77,26 +77,26 @@ const Dashboard = () => {
 
         <div style={cardStyle}>
           <h3>Total Donations</h3>
-          <p>${totalDonations}</p>
+          <p>KES{totalDonations}</p>
         </div>
 
         <div style={cardStyle}>
           <h3>Finance Balance</h3>
-          <p>${balance}</p>
+          <p>KES{balance}</p>
         </div>
       </div>
 
       <h2>Recent Projects</h2>
 
       {projects.map(p => (
-        <div 
-          key={p._id} 
-          style={{ 
-            marginBottom: "30px", 
-            background: "#fff", 
-            padding: "20px", 
-            borderRadius: "10px", 
-            boxShadow: "0 2px 10px rgba(0,0,0,0.05)" 
+        <div
+          key={p._id}
+          style={{
+            marginBottom: "30px",
+            background: "#fff",
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
           }}
         >
           <h3>{p.title}</h3>
@@ -126,30 +126,30 @@ const Dashboard = () => {
             </p>
           )}
 
-          {p.amountUsed !== undefined && (
-            <p>
-              <strong>Amount Used:</strong> KES{p.amountUsed}
-            </p>
-          )}
+          <p>
+            <strong>Total Budget:</strong> KES{p.budget}
+          </p>
 
-          {p.status && (
-            <p>
-              <strong>Status:</strong>{" "}
-              <span
-                style={{
-                  color:
-                    p.status === "completed"
-                      ? "green"
-                      : p.status === "ongoing"
-                      ? "orange"
-                      : "gray",
-                  fontWeight: "bold"
-                }}
-              >
-                {p.status}
-              </span>
-            </p>
-          )}
+          <p>
+            <strong>Budget Used:</strong> KES{p.budgetUsed}
+          </p>
+
+          <p>
+            <strong>Status:</strong>{" "}
+            <span
+              style={{
+                color:
+                  p.status === "completed"
+                    ? "green"
+                    : p.status === "ongoing"
+                    ? "orange"
+                    : "gray",
+                fontWeight: "bold"
+              }}
+            >
+              {p.status}
+            </span>
+          </p>
         </div>
       ))}
     </div>
