@@ -24,7 +24,7 @@ const Login = () => {
         JSON.stringify({ name, email, role })
       );
 
-      navigate("/");
+      navigate("/admin");
     } catch (err) {
       alert("Login failed");
     }
