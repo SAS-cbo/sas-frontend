@@ -6,22 +6,21 @@ import Projects from "./pages/Projects";
 import Donations from "./pages/Donations";
 import Finance from "./pages/Finance";
 import Login from "./pages/Login";
+import PublicHome from "./pages/PublicHome";
 import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardLayout from "./components/DashboardLayout";
-
-import PublicHome from "./pages/PublicHome";
-import PublicProjects from "./pages/PublicProjects";
 
 function App() {
   return (
     <Routes>
 
-      {/* ===== PUBLIC ROUTES ===== */}
+      {/* 🌍 PUBLIC WEBSITE */}
       <Route path="/" element={<PublicHome />} />
-      <Route path="/projects" element={<PublicProjects />} />
+
+      {/* 🔐 ADMIN LOGIN */}
       <Route path="/login" element={<Login />} />
 
-      {/* ===== PROTECTED ADMIN ROUTES ===== */}
+      {/* 🛡 ADMIN DASHBOARD */}
       <Route
         path="/admin"
         element={
@@ -47,7 +46,6 @@ function App() {
         />
       </Route>
 
-      {/* Catch all */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
