@@ -16,7 +16,7 @@ function App() {
 
       {/* 🌍 PUBLIC WEBSITE */}
       <Route path="/" element={<PublicHome />} />
-
+      <Route path="/projects" element={<PublicProjects />} />
       {/* 🔐 ADMIN LOGIN */}
       <Route path="/login" element={<Login />} />
 
