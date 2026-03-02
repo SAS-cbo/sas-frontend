@@ -48,7 +48,7 @@ const PublicProjects = () => {
           <p>{project.description}</p>
 
           <p><strong>Status:</strong> {project.status}</p>
-          <p><strong>Budget:</strong> ${project.budget}</p>
+          <p><strong>Budget:</strong> KES{project.budget}</p>
           <p><strong>Location:</strong> {project.location}</p>
         </div>
       ))}
