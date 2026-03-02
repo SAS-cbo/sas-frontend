@@ -55,11 +55,11 @@ const DashboardLayout = () => {
         <div style={styles.sidebarUser}>{user?.name}</div>
 
         <nav style={styles.sidebarNav}>
-          <NavLink to="/dashboard" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaTachometerAlt /> Dashboard</NavLink>
-          <NavLink to="/projects" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaProjectDiagram /> Projects</NavLink>
-          <NavLink to="/donations" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaDonate /> Donations</NavLink>
-          <NavLink to="/finance" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaMoneyCheckAlt /> Finance</NavLink>
-          <NavLink to="/profile" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaUser /> Profile</NavLink>
+          <NavLink to="/admin/dashboard" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaTachometerAlt /> Dashboard</NavLink>
+          <NavLink to="/admin/projects" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaProjectDiagram /> Projects</NavLink>
+          <NavLink to="/admin/donations" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaDonate /> Donations</NavLink>
+          <NavLink to="/admin/finance" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaMoneyCheckAlt /> Finance</NavLink>
+          <NavLink to="/admin/profile" style={({isActive}) => isActive ? {...styles.navLink, ...styles.navLinkActive} : styles.navLink}><FaUser /> Profile</NavLink>
         </nav>
 
         <button style={styles.logoutBtn} onClick={handleLogout}>
