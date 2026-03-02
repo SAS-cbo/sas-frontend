@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import PublicHome from "./pages/PublicHome";
 import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardLayout from "./components/DashboardLayout";
-
+import PublicProjects from "./pages/PublicProjects";
 function App() {
   return (
     <Routes>
