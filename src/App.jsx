@@ -8,11 +8,15 @@ import Finance from "./pages/Finance";
 import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardLayout from "./components/DashboardLayout";
+import PublicHome from "./pages/PublicHome";
+import PublicProjects from "./pages/PublicProjects";
 
 function App() {
   return (
     <Routes>
       {/* Public Route */}
+      <Route path="/home" element={<PublicHome />} />
+      <Route path="/projects" element={<PublicProjects />} />
       <Route path="/login" element={<Login />} />
 
       {/* Protected Dashboard Layout */}

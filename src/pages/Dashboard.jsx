@@ -131,7 +131,7 @@ const Dashboard = () => {
           </p>
 
           <p>
-            <strong>Budget Used:</strong> KES{p.budgetUsed}
+            <strong>Location:</strong> {p.location}
           </p>
 
           <p>
