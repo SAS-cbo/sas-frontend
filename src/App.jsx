@@ -8,20 +8,22 @@ import Finance from "./pages/Finance";
 import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardLayout from "./components/DashboardLayout";
+
 import PublicHome from "./pages/PublicHome";
 import PublicProjects from "./pages/PublicProjects";
 
 function App() {
   return (
     <Routes>
-      {/* Public Route */}
-      <Route path="/home" element={<PublicHome />} />
+
+      {/* ===== PUBLIC ROUTES ===== */}
+      <Route path="/" element={<PublicHome />} />
       <Route path="/projects" element={<PublicProjects />} />
       <Route path="/login" element={<Login />} />
 
-      {/* Protected Dashboard Layout */}
+      {/* ===== PROTECTED ADMIN ROUTES ===== */}
       <Route
-        path="/"
+        path="/admin"
         element={
           <ProtectedRoute>
             <DashboardLayout />
@@ -35,7 +37,6 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="donations" element={<Donations />} />
 
-        {/* Finance with role restriction */}
         <Route
           path="finance"
           element={
@@ -47,7 +48,7 @@ function App() {
       </Route>
 
       {/* Catch all */}
-      <Route path="*" element={<Navigate to="/login" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
