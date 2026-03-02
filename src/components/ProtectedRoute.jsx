@@ -1,4 +1,3 @@
-import React from "react";
 import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ children, roles }) => {
@@ -9,11 +8,13 @@ const ProtectedRoute = ({ children, roles }) => {
     return <Navigate to="/login" replace />;
   }
 
-  if (roles && !roles.includes(user.role)) {
-    return <Navigate to="/" replace />;
+  if (roles && roles.length > 0) {
+    if (!roles.includes(user.role)) {
+      return <Navigate to="/admin/dashboard" replace />;
+    }
   }
 
   return children;
 };
 
-export default ProtectedRoute; // ✅ must be default export
+export default ProtectedRoute;
