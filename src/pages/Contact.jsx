@@ -18,7 +18,7 @@ const Contact = () => {
 
         <div style={iconContainer}>
           <a
-            href="https://chat.whatsapp.com/YOUR_GROUP_LINK"
+            href="https://chat.whatsapp.com/FYX1vNzuxhhBSAHpgEAx4r?mode=gi_t"
             target="_blank"
             rel="noopener noreferrer"
             style={{ ...iconBtn, backgroundColor: "#25D366" }}
@@ -27,7 +27,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://instagram.com/YOUR_USERNAME"
+            href="https://instagram.com/_.share.a.smile._"
             target="_blank"
             rel="noopener noreferrer"
             style={{ ...iconBtn, backgroundColor: "#E1306C" }}
@@ -36,7 +36,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://tiktok.com/@YOUR_USERNAME"
+            href="https://tiktok.com/@Share.a.smile"
             target="_blank"
             rel="noopener noreferrer"
             style={{ ...iconBtn, backgroundColor: "#000000" }}
@@ -45,7 +45,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://youtube.com/@YOUR_CHANNEL"
+            href="https://youtube.com/@shareasmilecbo_projects"
             target="_blank"
             rel="noopener noreferrer"
             style={{ ...iconBtn, backgroundColor: "#FF0000" }}
@@ -58,8 +58,9 @@ const Contact = () => {
 
         <h3 style={sectionTitle}>Direct Contact</h3>
 
-        <p>Email: your@email.com</p>
-        <p>Phone: +2547XXXXXXXX</p>
+        <p>Email: orphanssmile254@gmail.com</p>
+        <p>Phone: +254 7 08768489</p>
+        <p>Adress: Nairobi</p>
       </div>
     </div>
   );
