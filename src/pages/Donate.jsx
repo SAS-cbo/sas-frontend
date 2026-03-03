@@ -20,7 +20,7 @@ const Donate = () => {
           <h3 style={highlight}>4039927</h3>
 
           <p><strong>Account Number:</strong></p>
-          <h3 style={highlight}>IFTAR,ORPHANS,WATER,EDUCATION(purpose of donation)</h3>
+          <h3 style={highlight}>IFTAR,ORPHANS,WATER,EDUCATION(pick purpose of donation)</h3>
         </div>
 
         <div style={divider}></div>
