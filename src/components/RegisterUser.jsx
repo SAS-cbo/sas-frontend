@@ -73,7 +73,6 @@ const RegisterUser = () => {
           <option value="staff">Staff</option>
           <option value="finance">Finance</option>
           <option value="admin">Admin</option>
-          <option value="volunteer">Volunteer</option>
         </select>
 
         <button type="submit">Register</button>
