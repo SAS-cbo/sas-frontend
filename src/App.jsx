@@ -11,6 +11,7 @@ import DashboardLayout from "./components/DashboardLayout";
 import PublicHome from "./pages/PublicHome";
 import PublicProjects from "./pages/PublicProjects";
 import Donate from "./pages/Donate";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <Routes>
@@ -19,6 +20,7 @@ function App() {
       <Route path="/" element={<PublicHome />} />
       <Route path="/projects" element={<PublicProjects />} />
       <Route path="/donate" element={<Donate />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
 
       {/* ================= ADMIN SYSTEM ================= */}
