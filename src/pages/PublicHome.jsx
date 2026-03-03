@@ -24,9 +24,13 @@ const PublicHome = () => {
     <div style={container}>
       {/* Header */}
       <div style={header}>
-        <h1 style={{ margin: 0 }}>Share A Smile Foundation</h1>
+        <h1 style={{ margin: 0 }}>Share A Smile Organisation</h1>
 
         <div>
+          <Link to="/contact">
+          <button style={contactHeaderBtn}>Contact</button>
+          </Link>
+
           <Link to="/donate">
             <button style={donateHeaderBtn}>Donate</button>
           </Link>
@@ -59,7 +63,7 @@ const PublicHome = () => {
       <section style={section}>
         <h2 style={sectionTitle}>Who We Are</h2>
         <p style={sectionText}>
-          Share A Smile Foundation is a non-profit organization committed to
+          Share A Smile Organisation is a non-profit organization committed to
           sustainable community development. We focus on water access,
           education empowerment, feeding programs, and long-term impact
           initiatives across underserved regions.
@@ -138,9 +142,9 @@ const PublicHome = () => {
 
       {/* Footer */}
       <footer style={footer}>
-        <p>© {new Date().getFullYear()} Share A Smile Foundation</p>
+        <p>© {new Date().getFullYear()} Share A Smile Organisation</p>
         <p style={{ fontSize: "14px", marginTop: "5px" }}>
-          Together we build stronger communities.
+          Towards Beautiful Destination.
         </p>
       </footer>
     </div>
