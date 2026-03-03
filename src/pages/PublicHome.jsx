@@ -28,7 +28,7 @@ const PublicHome = () => {
 
         <div>
           <Link to="/contact">
-          <button style={contactHeaderBtn}>Contact</button>
+          <button>Contact</button>
           </Link>
 
           <Link to="/donate">
