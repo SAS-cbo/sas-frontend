@@ -61,7 +61,7 @@ const Contact = () => {
 
         <p>Email: orphanssmile254@gmail.com</p>
         <p>Phone: +254 7 08768489</p>
-        <p>Adress: Nairobi</p>
+        <p>Address: Nairobi</p>
       </div>
     </div>
   );
