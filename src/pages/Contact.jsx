@@ -1,5 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import bg from "../assets/bg.jpg";
 
 const Contact = () => {
   return (
@@ -70,7 +71,10 @@ const Contact = () => {
 
 const container = {
   minHeight: "100vh",
-  background: "#f4f6f9",
+  backgroundImage: `url(${bg})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -79,12 +83,12 @@ const container = {
 };
 
 const card = {
-  background: "white",
+  background: "rgba(255,255,255,0.95)",
   padding: "40px",
   borderRadius: "12px",
   maxWidth: "600px",
   width: "100%",
-  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
   textAlign: "center"
 };
 

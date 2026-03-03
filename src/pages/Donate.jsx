@@ -1,4 +1,5 @@
 import React from "react";
+import bg from "../assets/bg.jpg";
 
 const Donate = () => {
   return (
@@ -20,7 +21,9 @@ const Donate = () => {
           <h3 style={highlight}>4039927</h3>
 
           <p><strong>Account Number:</strong></p>
-          <h3 style={highlight}>IFTAR,ORPHANS,WATER,EDUCATION(pick purpose of donation)</h3>
+          <h3 style={highlight}>
+            IFTAR,ORPHANS,WATER,EDUCATION(pick purpose of donation)
+          </h3>
         </div>
 
         <div style={divider}></div>
@@ -32,7 +35,7 @@ const Donate = () => {
           <li>Select Lipa na M-Pesa</li>
           <li>Select Paybill</li>
           <li>Enter Paybill Number: <strong>4039927</strong></li>
-          <li>Enter Account Number: <strong>,IFTAR,ORPHANS,WATER,EDUCATION</strong></li>
+          <li>Enter Account Number: <strong>IFTAR,ORPHANS,WATER,EDUCATION</strong></li>
           <li>Enter the amount</li>
           <li>Enter your M-Pesa PIN and confirm</li>
         </ol>
@@ -50,7 +53,10 @@ const Donate = () => {
 
 const container = {
   minHeight: "100vh",
-  background: "#f4f6f9",
+  backgroundImage: `url(${bg})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -59,12 +65,12 @@ const container = {
 };
 
 const card = {
-  background: "white",
+  background: "rgba(255,255,255,0.95)",
   padding: "40px",
   borderRadius: "12px",
   maxWidth: "600px",
   width: "100%",
-  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
   textAlign: "center"
 };
 
