@@ -31,7 +31,7 @@ const Donate = () => {
           <li>Go to M-Pesa on your phone</li>
           <li>Select Lipa na M-Pesa</li>
           <li>Select Paybill</li>
-          <li>Enter Paybill Number: <strong>123456</strong></li>
+          <li>Enter Paybill Number: <strong>4039927</strong></li>
           <li>Enter Account Number: <strong>,IFTAR,ORPHANS,WATER,EDUCATION</strong></li>
           <li>Enter the amount</li>
           <li>Enter your M-Pesa PIN and confirm</li>
