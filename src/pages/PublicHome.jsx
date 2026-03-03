@@ -31,6 +31,7 @@ const PublicHome = () => {
           <button style={contactHeaderBtn}>Contact</button>
           </Link>
 
+
           <Link to="/donate">
             <button style={donateHeaderBtn}>Donate</button>
           </Link>
