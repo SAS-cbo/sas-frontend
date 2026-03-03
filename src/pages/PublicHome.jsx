@@ -28,7 +28,7 @@ const PublicHome = () => {
 
         <div>
           <Link to="/contact">
-          <button>Contact</button>
+          <button style={contactHeaderBtn}>Contact</button>
           </Link>
 
           <Link to="/donate">
@@ -179,6 +179,15 @@ const loginButton = {
   fontWeight: "bold"
 };
 
+const contactHeaderBtn = {
+  padding: "8px 16px",
+  background: "#f39c12",
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  cursor: "pointer",
+  fontWeight: "bold"
+};
 const donateHeaderBtn = {
   padding: "8px 16px",
   background: "#f39c12",
