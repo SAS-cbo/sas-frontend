@@ -10,7 +10,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardLayout from "./components/DashboardLayout";
 import PublicHome from "./pages/PublicHome";
 import PublicProjects from "./pages/PublicProjects";
-
+import Donate from "./pages/Donate";
 function App() {
   return (
     <Routes>
@@ -18,6 +18,7 @@ function App() {
       {/* ================= PUBLIC WEBSITE ================= */}
       <Route path="/" element={<PublicHome />} />
       <Route path="/projects" element={<PublicProjects />} />
+      <Route path="/donate" element={<Donate />} />
       <Route path="/login" element={<Login />} />
 
       {/* ================= ADMIN SYSTEM ================= */}
